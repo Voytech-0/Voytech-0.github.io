@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wojciech Trejter · AI Engineer &amp; Researcher</title>
+<meta name="description" content="AI engineer and researcher working where machine learning meets the physical world: robotic perception, SLAM, computer vision, and sim-to-real world models. MSc AI Cum Laude (UvA), TMLR author, European Rover Challenge 2023 winner.">
+<link rel="icon" href="profile_pic.png">
+<style>
+:root{
+  --ink:#1a1f28; --muted:#5a6472; --line:#e3e6ea;
+  --bg:#ffffff; --soft:#f6f7f9; --accent:#3b82f6; --accent-deep:#0b5cad;
+  --hero-ink:#eef2f7; --hero-muted:#9aa7b8; --hero-bg:#10141b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); background:var(--bg);
+  font:17px/1.65 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+main{max-width:760px; margin:0 auto; padding:0 24px 80px}
+a{color:var(--accent-deep); text-decoration:none; transition:color .2s}
+a:hover{color:var(--accent)}
+h1,h2{line-height:1.2}
+h1{
+  font-family:Georgia,"Times New Roman",serif; font-weight:600;
+  font-size:52px; margin:0 0 10px; letter-spacing:-.01em;
+}
+h2{
+  display:flex; align-items:center; gap:14px;
+  font-size:13px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted); margin:72px 0 28px;
+}
+h2::before{content:""; width:28px; height:2px; background:var(--accent); flex:none}
+/* hero: full-bleed dark */
+.hero{
+  background:var(--hero-bg); color:var(--hero-ink);
+  width:100vw; margin-left:calc(50% - 50vw);
+  padding:88px 24px 72px;
+}
+.hero-inner{max-width:760px; margin:0 auto; display:flex; gap:36px; align-items:center; flex-wrap:wrap}
+.hero img{
+  width:128px; height:128px; border-radius:50%; object-fit:cover; flex:none;
+  box-shadow:0 0 0 3px var(--hero-bg), 0 0 0 5px var(--accent);
+}
+.pitch{font-size:22px; margin:0 0 6px; max-width:54ch; color:var(--hero-ink)}
+.pitch b{color:#fff}
+.hero .pitch a{color:var(--accent)}
+.availability{
+  display:inline-block; margin-top:16px; padding:7px 14px;
+  border:1px solid var(--accent); color:var(--hero-muted);
+  border-radius:20px; font-size:14px; font-weight:600;
+}
+.links{margin-top:28px; display:flex; flex-wrap:wrap; gap:10px}
+.links a{
+  display:inline-block; padding:9px 16px;
+  border:1px solid #2c3542; border-radius:8px;
+  color:var(--hero-ink); background:transparent; font-weight:600; font-size:14px;
+  transition:border-color .2s, color .2s, background .2s;
+}
+.links a:hover{text-decoration:none; border-color:var(--accent); color:var(--accent); background:rgba(59,130,246,.08)}
+/* highlights as cards */
+.work{
+  background:var(--soft); border:1px solid var(--line); border-radius:14px;
+  padding:26px 26px 20px; margin:0 0 20px;
+  transition:box-shadow .2s, transform .2s, border-color .2s;
+}
+.work:hover{
+  border-color:#c9d4e3; transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(16,20,27,.08);
+}
+.work h3{font-size:20px; margin:0 0 2px}
+.work .meta{color:var(--muted); font-size:14px; margin:0 0 12px}
+.work p{margin:0 0 12px}
+.work .tags{margin-top:12px; display:flex; flex-wrap:wrap; gap:8px}
+.work .tags span{
+  background:#fff; border:1px solid var(--line); border-radius:20px;
+  padding:3px 12px; font-size:13px; color:var(--muted);
+}
+/* lists */
+.list{margin:0; padding:0; list-style:none}
+.list li{padding:12px 0; border-bottom:1px solid var(--line)}
+.list li:last-child{border-bottom:none}
+.list .when{color:var(--muted); font-size:14px}
+/* skills */
+.skills p{margin:0 0 14px; max-width:62ch}
+.skills b{font-weight:650; color:var(--ink)}
+footer{border-top:1px solid var(--line); margin-top:56px; padding-top:24px; color:var(--muted); font-size:14px}
+@media (max-width:560px){
+  h1{font-size:38px}
+  .pitch{font-size:19px}
+  .hero{padding:64px 24px 56px}
+  .work{padding:20px 18px 16px}
+}
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+  <div class="hero-inner">
+  <img src="profile_pic.png" alt="Portrait of Wojciech Trejter">
+  <div>
+    <h1>Wojciech Trejter</h1>
+    <p class="pitch">I build machine learning that survives contact with the real world:
+    <b>robotic perception, SLAM, computer vision</b>, and <b>sim-to-real world models</b>.</p>
+    <span class="availability">Open to AI / robotics engineering roles in Europe</span>
+    <div class="links">
+      <a href="https://github.com/Voytech-0">GitHub</a>
+      <a href="https://www.linkedin.com/in/wojciech-trejter/">LinkedIn</a>
+      <a href="CV_Wojciech_Trejter.pdf">Download CV</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="work">
+<h2>Selected work</h2>
+
+<div class="work">
+  <h3>Sim-to-real transfer for robotic arms at xBerry</h3>
+  <p class="meta">AI Intern · Wrocław · 2026</p>
+  <p>I closed the gap between Isaac Lab simulation and real hardware: architecting the
+  simulation pipelines used to train and evaluate high-fidelity arm tasks, and adapting
+  large world models to a limited compute budget with LoRA fine-tuning. The policies
+  didn't just score well in simulation; they worked on the robot.</p>
+  <div class="tags"><span>Isaac Lab</span><span>LoRA</span><span>World models</span><span>Sim-to-real</span></div>
+</div>
+
+<div class="work">
+  <h3>Winning the European Rover Challenge 2023</h3>
+  <p class="meta">Technical Team Lead · Makercie · Groningen</p>
+  <p>I led a five-person software team to 1st place in the Remote Edition, building the
+  rover's autonomy stack in ROS: computer-vision-driven control of a 7DoF robotic arm.
+  Two years in student robotics taught me the part ML papers skip: systems that must run,
+  fail, and be debugged on real hardware, under time pressure, as a team.</p>
+  <div class="tags"><span>ROS</span><span>Computer vision</span><span>7DoF arm</span><span>Team lead</span></div>
+</div>
+
+<div class="work">
+  <h3>Published in Transactions on Machine Learning Research</h3>
+  <p class="meta">TMLR 2025</p>
+  <p>Co-author of <a href="https://doi.org/10.48550/arXiv.2509.14846">[Re] Improving
+  Interpretation Faithfulness for Vision Transformers</a>, reproducing prior work on SOTA
+  vision models and improving its replicability, with computations on an HPC cluster.
+  Earlier, I applied multitask learning to hydrodynamic imaging with
+  <a href="https://doi.org/10.13140/RG.2.2.16420.95360">ResNet-based signal processing</a>
+  for my BSc thesis.</p>
+  <div class="tags"><span>Vision Transformers</span><span>Interpretability</span><span>HPC</span><span>PyTorch</span></div>
+</div>
+</section>
+
+<section id="elsewhere">
+<h2>Elsewhere</h2>
+<ul class="list">
+  <li>Teaching Assistant, Computer Vision &amp; Reinforcement Learning, University of Amsterdam <span class="when">2025–26</span></li>
+  <li>Full-stack MERN dashboard, Scrum Master rotation at IBM CIC, Groningen <span class="when">2024</span></li>
+  <li>Co-founder of Rodina AI, a B2B startup creating synthetic image datasets <span class="when">2024</span></li>
+  <li>Organiser &amp; problem-set author, Groningen Algorithmic Programming Contest (GAPC) <span class="when">2023</span></li>
+  <li>Two-time ICPC competitor: 28th in Benelux, 58th in Northwestern Europe <span class="when">2022–23</span></li>
+</ul>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<ul class="list">
+  <li>MSc Artificial Intelligence, University of Amsterdam (Cum Laude, GPA 8.3/10);
+  thesis on long-term dynamics for SLAM and 3D Gaussian Splatting <span class="when">2024–26</span></li>
+  <li>BSc Artificial Intelligence, University of Groningen (Cum Laude, GPA 8.8/10, Honours programme) <span class="when">2021–24</span></li>
+</ul>
+</section>
+
+<section id="skills" class="skills">
+<h2>What I work with</h2>
+<p>My core is <b>Python and PyTorch</b>; I train and fine-tune transformers and world models
+(BERT, LLMs, diffusion), and work across the robotics stack: <b>ROS, OpenCV, SLAM,
+Isaac Lab, 3D Gaussian Splatting</b>. On the infrastructure side: Docker, FastAPI, SLURM,
+WandB, GitLab CI/CD.</p>
+</section>
+
+<footer>
+  Polish (native), English (full professional). Based in Rotterdam.
+  Find me on <a href="https://github.com/Voytech-0">GitHub</a> or
+  <a href="https://www.linkedin.com/in/wojciech-trejter/">LinkedIn</a>.
+</footer>
+
+</main>
+</body>
+</html>
