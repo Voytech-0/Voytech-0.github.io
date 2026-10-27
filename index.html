@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wojciech Trejter · AI Engineer &amp; Researcher</title>
-<meta name="description" content="AI engineer and researcher working where machine learning meets the physical world: robotic perception, SLAM, computer vision, and sim-to-real world models. MSc AI Cum Laude (UvA), TMLR author, European Rover Challenge 2023 winner.">
+<meta name="description" content="AI engineer and researcher working where machine learning meets the physical world: SLAM, computer vision, robotic perception, sim-to-real world models, and the pipelines that train and ship them. MSc AI Cum Laude (UvA), TMLR author, European Rover Challenge 2023 winner.">
 <link rel="icon" href="profile_pic.png">
 <style>
 :root{
@@ -103,8 +103,9 @@ footer{border-top:1px solid var(--line); margin-top:56px; padding-top:24px; colo
   <div>
     <h1>Wojciech Trejter</h1>
     <p class="pitch">I build machine learning that survives contact with the real world:
-    <b>robotic perception, SLAM, computer vision</b>, and <b>sim-to-real world models</b>.</p>
-    <span class="availability">Open to AI / robotics engineering roles in Europe</span>
+    <b>SLAM, computer vision, robotic perception</b>, <b>sim-to-real world models</b>,
+    and the <b>pipelines that train and ship them</b>.</p>
+    <span class="availability">Open to ML, MLOps and robotics engineering roles in Europe</span>
     <div class="links">
       <a href="https://github.com/Voytech-0">GitHub</a>
       <a href="https://www.linkedin.com/in/wojciech-trejter/">LinkedIn</a>
@@ -118,19 +119,28 @@ footer{border-top:1px solid var(--line); margin-top:56px; padding-top:24px; colo
 <h2>Selected work</h2>
 
 <div class="work">
+  <h3>Evo-SLAM: SLAM for scenes that change</h3>
+  <p class="meta">MSc thesis · University of Amsterdam · 2026</p>
+  <p>An online monocular Gaussian Splatting SLAM system for evolving scenes, built on
+  Vision Transformers and foundation models. It outperforms the published methods GaME
+  and WildGS-SLAM, and the paper is under review.</p>
+  <div class="tags"><span>SLAM</span><span>3D Gaussian Splatting</span><span>Vision Transformers</span><span>Foundation models</span></div>
+</div>
+
+<div class="work">
   <h3>Sim-to-real transfer for robotic arms at xBerry</h3>
   <p class="meta">AI Intern · Wrocław · 2026</p>
   <p>I closed the gap between Isaac Lab simulation and real hardware: architecting the
   simulation pipelines used to train and evaluate high-fidelity arm tasks, and adapting
-  large world models to a limited compute budget with LoRA fine-tuning. The policies
-  didn't just score well in simulation; they worked on the robot.</p>
+  large world models to a limited compute budget with LoRA fine-tuning. As a team we took
+  real-robot task success from 0% to 80%.</p>
   <div class="tags"><span>Isaac Lab</span><span>LoRA</span><span>World models</span><span>Sim-to-real</span></div>
 </div>
 
 <div class="work">
   <h3>Winning the European Rover Challenge 2023</h3>
   <p class="meta">Technical Team Lead · Makercie · Groningen</p>
-  <p>I led a five-person software team to 1st place in the Remote Edition, building the
+  <p>I led a seven-person software team to 1st place in the Remote Edition, building the
   rover's autonomy stack in ROS: computer-vision-driven control of a 7DoF robotic arm.
   Two years in student robotics taught me the part ML papers skip: systems that must run,
   fail, and be debugged on real hardware, under time pressure, as a team.</p>
@@ -143,10 +153,19 @@ footer{border-top:1px solid var(--line); margin-top:56px; padding-top:24px; colo
   <p>Co-author of <a href="https://doi.org/10.48550/arXiv.2509.14846">[Re] Improving
   Interpretation Faithfulness for Vision Transformers</a>, reproducing prior work on SOTA
   vision models and improving its replicability, with computations on an HPC cluster.
-  Earlier, I applied multitask learning to hydrodynamic imaging with
-  <a href="https://doi.org/10.13140/RG.2.2.16420.95360">ResNet-based signal processing</a>
-  for my BSc thesis.</p>
+  Earlier, for my BSc thesis, I applied
+  <a href="https://doi.org/10.13140/RG.2.2.16420.95360">multitask learning to hydrodynamic imaging</a>
+  with MLP and LSTM models.</p>
   <div class="tags"><span>Vision Transformers</span><span>Interpretability</span><span>HPC</span><span>PyTorch</span></div>
+</div>
+
+<div class="work">
+  <h3>Learning SAR: Sentinel-1 ship detection</h3>
+  <p class="meta">Weekend project · 2026</p>
+  <p>A small <a href="https://github.com/Voytech-0/sar-ship-locator">pipeline</a> that detects
+  ships in Sentinel-1 radar scenes over the Great Belt and checks them against AIS, built to
+  learn how SAR data behaves.</p>
+  <div class="tags"><span>Sentinel-1</span><span>AIS</span><span>Airflow</span><span>PostGIS</span></div>
 </div>
 </section>
 
@@ -165,7 +184,7 @@ footer{border-top:1px solid var(--line); margin-top:56px; padding-top:24px; colo
 <h2>Education</h2>
 <ul class="list">
   <li>MSc Artificial Intelligence, University of Amsterdam (Cum Laude, GPA 8.3/10);
-  thesis on long-term dynamics for SLAM and 3D Gaussian Splatting <span class="when">2024–26</span></li>
+  thesis Evo-SLAM, Gaussian Splatting SLAM for evolving scenes <span class="when">2024–26</span></li>
   <li>BSc Artificial Intelligence, University of Groningen (Cum Laude, GPA 8.8/10, Honours programme) <span class="when">2021–24</span></li>
 </ul>
 </section>
